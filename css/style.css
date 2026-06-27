@@ -426,6 +426,7 @@ button {
 .contact-form {
   display: grid;
   gap: 18px;
+  max-width: 620px;
 }
 
 .contact-form__field {
@@ -531,9 +532,20 @@ button {
   }
 
   .site-footer__grid {
+    position: relative;
     grid-template-columns: 1fr auto;
     align-items: center;
     text-align: left;
+  }
+
+  .site-footer__brand p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: max-content;
+    margin: 0;
+    text-align: center;
+    transform: translate(-50%, -50%);
   }
 
   .site-footer__nav {
