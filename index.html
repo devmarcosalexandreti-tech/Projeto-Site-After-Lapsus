@@ -8,13 +8,23 @@
       content="After Lapsus, estúdio indie de jogos focado em terror, RPG e sobrevivência."
     />
     <title>After Lapsus | Estúdio Indie de Jogos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="site-header__container">
         <a class="site-header__brand" href="#home" aria-label="After Lapsus - Home">
-          <span class="site-header__logo-placeholder">After Lapsus</span>
+          <img
+            class="site-brand__logo"
+            src="assets/images/logoafterlapsus.png"
+            alt="After Lapsus"
+          />
         </a>
 
         <nav class="social-nav" aria-label="Redes sociais">
@@ -23,6 +33,9 @@
             <li><a class="social-nav__link" href="#" aria-label="Instagram">IG</a></li>
             <li><a class="social-nav__link" href="#" aria-label="X/Twitter">X</a></li>
             <li><a class="social-nav__link" href="#" aria-label="Discord">DC</a></li>
+            <li><a class="social-nav__link" href="#" aria-label="YouTube">YT</a></li>
+            <li><a class="social-nav__link" href="#" aria-label="TikTok">TK</a></li>
+            <li><a class="social-nav__link" href="#" aria-label="Facebook">FB</a></li>
           </ul>
         </nav>
       </div>
@@ -32,8 +45,11 @@
       <section class="hero-section" id="home" aria-labelledby="hero-title">
         <div class="hero-section__media">
           <!-- FUTURA IMPLEMENTAÇÃO PARALLAX -->
-          <div class="image-placeholder image-placeholder--hero">
-            Placeholder da imagem principal
+          <div class="hero-slider" aria-hidden="true">
+            <img class="hero-slider__image" src="assets/images/image1.jpg" alt="" />
+            <img class="hero-slider__image" src="assets/images/image2.jpg" alt="" />
+            <img class="hero-slider__image" src="assets/images/image3.jpg" alt="" />
+            <img class="hero-slider__image" src="assets/images/image1.jpg" alt="" />
           </div>
           <div class="hero-section__overlay" aria-hidden="true"></div>
         </div>
@@ -174,8 +190,15 @@
     <footer class="site-footer">
       <div class="section-container site-footer__grid">
         <div class="site-footer__brand">
-          <span class="site-footer__logo-placeholder">After Lapsus</span>
           <p>&copy; 2026 After Lapsus. Todos os direitos reservados.</p>
+        </div>
+
+        <div class="site-footer__logo-wrap">
+          <img
+            class="site-brand__logo site-brand__logo--footer"
+            src="assets/images/logoafterlapsus.png"
+            alt="After Lapsus"
+          />
         </div>
 
 
@@ -185,6 +208,9 @@
             <li><a class="social-nav__link" href="#" aria-label="Instagram">IG</a></li>
             <li><a class="social-nav__link" href="#" aria-label="X/Twitter">X</a></li>
             <li><a class="social-nav__link" href="#" aria-label="Discord">DC</a></li>
+            <li><a class="social-nav__link" href="#" aria-label="YouTube">YT</a></li>
+            <li><a class="social-nav__link" href="#" aria-label="TikTok">TK</a></li>
+            <li><a class="social-nav__link" href="#" aria-label="Facebook">FB</a></li>
           </ul>
         </nav>
       </div>
