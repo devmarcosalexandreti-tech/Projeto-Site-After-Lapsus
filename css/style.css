@@ -156,14 +156,14 @@ button {
    ========================================================================== */
 
 .site-header {
-  position: fixed;
+  position: absolute;
   z-index: 20;
   top: 0;
   left: 0;
   width: 100%;
   min-height: var(--header-height);
-  border-bottom: 1px solid var(--color-border);
-  background: rgba(17, 17, 17, 0.94);
+  border-bottom: 0;
+  background: transparent;
 }
 
 .site-header__container {
@@ -343,9 +343,13 @@ button {
   text-transform: uppercase;
 }
 
+.hero-section .section-eyebrow {
+  margin-bottom: 20px;
+}
+
 .hero-section__text {
   width: min(100%, 620px);
-  margin: 22px auto 0;
+  margin: 20px auto 0;
   color: var(--color-text-muted);
   font-size: 1.05rem;
 }
@@ -363,6 +367,42 @@ button {
   aspect-ratio: 16 / 9;
   min-height: auto;
   margin-top: 28px;
+}
+
+.video-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-link__thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-link__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.48);
+}
+
+.video-link__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: clamp(64px, 10vw, 96px);
+  height: auto;
+  transform: translate(-50%, -50%);
+  transition: transform var(--transition-base), filter var(--transition-base);
+}
+
+.video-link:hover .video-link__button,
+.video-link:focus-visible .video-link__button {
+  filter: brightness(1.15);
+  transform: translate(-50%, -50%) scale(1.05);
 }
 
 .featured-game__description {
