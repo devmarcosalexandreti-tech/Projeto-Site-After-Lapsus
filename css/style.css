@@ -682,6 +682,30 @@ button {
    Responsive
    ========================================================================== */
 
+@media (max-width: 719px) {
+  .site-header__container {
+    justify-content: center;
+  }
+
+  .hero-section .section-eyebrow {
+    font-size: clamp(0.64rem, 3vw, 0.78rem);
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+  }
+
+  .site-footer__logo-wrap {
+    order: 1;
+  }
+
+  .social-nav--footer {
+    order: 2;
+  }
+
+  .site-footer__brand {
+    order: 3;
+  }
+}
+
 @media (min-width: 720px) {
   .section-block {
     padding-block: 96px;
