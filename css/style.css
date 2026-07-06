@@ -260,6 +260,20 @@ button {
   color: var(--color-accent);
 }
 
+.social-nav__icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.72;
+  filter: invert(1);
+  transition: opacity var(--transition-base), filter var(--transition-base);
+}
+
+.social-nav__link:hover .social-nav__icon,
+.social-nav__link:focus-visible .social-nav__icon {
+  opacity: 1;
+  filter: invert(80%) sepia(49%) saturate(562%) hue-rotate(142deg) brightness(91%) contrast(83%);
+}
+
 .site-header .social-nav__link {
   width: 42px;
   height: 42px;
@@ -469,6 +483,12 @@ button {
   border-width: 0 0 1px;
 }
 
+.game-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .game-card__content {
   display: grid;
   gap: 14px;
@@ -488,6 +508,79 @@ button {
 .game-card .button {
   justify-self: start;
   margin-top: 6px;
+}
+
+.game-card--drawer {
+  align-self: start;
+}
+
+.game-card--drawer .game-card__content {
+  gap: 0;
+  padding: 18px 20px 20px;
+}
+
+.game-card--drawer .game-card__title {
+  font-size: 1.15rem;
+  transition: color 220ms ease;
+}
+
+.game-card--drawer:hover .game-card__title,
+.game-card--drawer:focus-within .game-card__title {
+  color: var(--color-accent);
+}
+
+.game-card--drawer .game-card__image {
+  position: relative;
+  overflow: hidden;
+}
+
+.game-card--drawer .game-card__image img {
+  display: block;
+  object-position: 52% 50%;
+  transform: scale(1);
+  transform-origin: center center;
+  transition: transform 700ms ease;
+}
+
+.game-card--drawer .game-card__image::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  z-index: 1;
+  height: 58px;
+  background: linear-gradient(
+    180deg,
+    rgba(34, 34, 34, 0) 0%,
+    rgba(34, 34, 34, 0.56) 52%,
+    var(--color-surface) 100%
+  );
+  pointer-events: none;
+}
+
+.game-card--drawer .game-card__drawer {
+  display: grid;
+  gap: 14px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: max-height 520ms ease, opacity 420ms ease, transform 520ms ease,
+    margin-top 520ms ease;
+}
+
+.game-card--drawer:hover .game-card__drawer,
+.game-card--drawer:focus-within .game-card__drawer {
+  max-height: 180px;
+  margin-top: 14px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.game-card--drawer:hover .game-card__image img,
+.game-card--drawer:focus-within .game-card__image img {
+  transform: scale(1.06);
 }
 
 /* ==========================================================================

@@ -29,13 +29,41 @@
 
         <nav class="social-nav" aria-label="Redes sociais">
           <ul class="social-nav__list">
-            <li><a class="social-nav__link" href="#" aria-label="WhatsApp">WA</a></li>
-            <li><a class="social-nav__link" href="#" aria-label="Instagram">IG</a></li>
-            <li><a class="social-nav__link" href="#" aria-label="X/Twitter">X</a></li>
-            <li><a class="social-nav__link" href="#" aria-label="Discord">DC</a></li>
-            <li><a class="social-nav__link" href="#" aria-label="YouTube">YT</a></li>
-            <li><a class="social-nav__link" href="#" aria-label="TikTok">TK</a></li>
-            <li><a class="social-nav__link" href="#" aria-label="Facebook">FB</a></li>
+            <li>
+              <a class="social-nav__link" href="#" aria-label="Steam">
+                <img class="social-nav__icon" src="assets/icons/steam.svg" alt="" aria-hidden="true" />
+              </a>
+            </li>
+            <li>
+              <a class="social-nav__link" href="#" aria-label="Discord">
+                <img class="social-nav__icon" src="assets/icons/discord.svg" alt="" aria-hidden="true" />
+              </a>
+            </li>
+            <li>
+              <a class="social-nav__link" href="#" aria-label="YouTube">
+                <img class="social-nav__icon" src="assets/icons/youtube.svg" alt="" aria-hidden="true" />
+              </a>
+            </li>
+            <li>
+              <a class="social-nav__link" href="#" aria-label="Instagram">
+                <img class="social-nav__icon" src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+              </a>
+            </li>
+            <li>
+              <a class="social-nav__link" href="#" aria-label="X/Twitter">
+                <img class="social-nav__icon" src="assets/icons/twitter-x.svg" alt="" aria-hidden="true" />
+              </a>
+            </li>
+            <li>
+              <a class="social-nav__link" href="#" aria-label="Bluesky">
+                <img class="social-nav__icon" src="assets/icons/bluesky.svg" alt="" aria-hidden="true" />
+              </a>
+            </li>
+            <li>
+              <a class="social-nav__link" href="#" aria-label="Tiktok">
+                <img class="social-nav__icon" src="assets/icons/tiktok.svg" alt="" aria-hidden="true" />
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -120,11 +148,6 @@ Sobreviva. Descubra a verdade. Escape antes que seja tarde demais..
             </p>
           </div>
 
-          <div class="about-section__visual">
-            <div class="image-placeholder image-placeholder--concept">
-              Placeholder para arte conceitual
-            </div>
-          </div>
         </div>
       </section>
 
@@ -137,36 +160,50 @@ Sobreviva. Descubra a verdade. Escape antes que seja tarde demais..
           </div>
 
           <div class="games-grid">
-            <article class="game-card">
-              <div class="image-placeholder game-card__image">Imagem do jogo</div>
+            <article class="game-card game-card--drawer">
+              <div class="game-card__image">
+                <img src="assets/images/thumbnailmedo.jpg" alt="Thumbnail do jogo Medo Desconhecido" />
+              </div>
               <div class="game-card__content">
                 <h3 class="game-card__title">Medo Desconhecido</h3>
-                <p class="game-card__description">
-                  Terror psicológico com exploração, mistério e sobrevivência.
-                </p>
-                <a class="button button--secondary" href="#">Saiba Mais</a>
+                <div class="game-card__drawer">
+                  <p class="game-card__description">
+                    Terror psicológico com exploração, mistério e sobrevivência.
+                  </p>
+                  <a class="button button--secondary" href="#">Saiba Mais</a>
+                </div>
               </div>
             </article>
 
-            <article class="game-card">
-              <div class="image-placeholder game-card__image">Imagem do jogo</div>
+            <article class="game-card game-card--drawer">
+              <div class="game-card__image">
+                <img src="assets/images/thumbnailzozo.jpg" alt="Thumbnail do jogo O Show do Zozo" />
+              </div>
               <div class="game-card__content">
-                <h3 class="game-card__title">Projeto Lapsus</h3>
-                <p class="game-card__description">
-                  RPG sombrio em desenvolvimento com foco em escolhas e tensão.
-                </p>
-                <a class="button button--secondary" href="#">Saiba Mais</a>
+                <h3 class="game-card__title">O Show do Zozo</h3>
+                <div class="game-card__drawer">
+                  <p class="game-card__description">
+                    Terror sobre um programa infantil distorcido nas profundezas da internet,
+                    com puzzles, jogos mortais e uma historia autoral em serie.
+                  </p>
+                  <a class="button button--secondary" href="#">Saiba Mais</a>
+                </div>
               </div>
             </article>
 
-            <article class="game-card">
-              <div class="image-placeholder game-card__image">Imagem do jogo</div>
+            <article class="game-card game-card--drawer">
+              <div class="game-card__image">
+                <img src="assets/images/after-lapsus-em-breve.png" alt="Imagem de futuros projetos da After Lapsus" />
+              </div>
               <div class="game-card__content">
-                <h3 class="game-card__title">Zona Cinzenta</h3>
-                <p class="game-card__description">
-                  Experiência de sobrevivência preparada para evolução futura.
-                </p>
-                <a class="button button--secondary" href="#">Saiba Mais</a>
+                <h3 class="game-card__title">Futuros Projetos</h3>
+                <div class="game-card__drawer">
+                  <p class="game-card__description">
+                    Espaço reservado para novos jogos autorais da After Lapsus,
+                    com terror, RPG e sobrevivência em desenvolvimento.
+                  </p>
+                  <a class="button button--secondary" href="#">Saiba Mais</a>
+                </div>
               </div>
             </article>
           </div>
@@ -227,13 +264,41 @@ Sobreviva. Descubra a verdade. Escape antes que seja tarde demais..
 
         <nav class="social-nav social-nav--footer" aria-label="Redes sociais no rodapé">
           <ul class="social-nav__list">
-            <li><a class="social-nav__link" href="#" aria-label="WhatsApp">WA</a></li>
-            <li><a class="social-nav__link" href="#" aria-label="Instagram">IG</a></li>
-            <li><a class="social-nav__link" href="#" aria-label="X/Twitter">X</a></li>
-            <li><a class="social-nav__link" href="#" aria-label="Discord">DC</a></li>
-            <li><a class="social-nav__link" href="#" aria-label="YouTube">YT</a></li>
-            <li><a class="social-nav__link" href="#" aria-label="TikTok">TK</a></li>
-            <li><a class="social-nav__link" href="#" aria-label="Facebook">FB</a></li>
+            <li>
+              <a class="social-nav__link" href="#" aria-label="Steam">
+                <img class="social-nav__icon" src="assets/icons/steam.svg" alt="" aria-hidden="true" />
+              </a>
+            </li>
+            <li>
+              <a class="social-nav__link" href="#" aria-label="Discord">
+                <img class="social-nav__icon" src="assets/icons/discord.svg" alt="" aria-hidden="true" />
+              </a>
+            </li>
+            <li>
+              <a class="social-nav__link" href="#" aria-label="YouTube">
+                <img class="social-nav__icon" src="assets/icons/youtube.svg" alt="" aria-hidden="true" />
+              </a>
+            </li>
+            <li>
+              <a class="social-nav__link" href="#" aria-label="Instagram">
+                <img class="social-nav__icon" src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+              </a>
+            </li>
+            <li>
+              <a class="social-nav__link" href="#" aria-label="X/Twitter">
+                <img class="social-nav__icon" src="assets/icons/twitter-x.svg" alt="" aria-hidden="true" />
+              </a>
+            </li>
+            <li>
+              <a class="social-nav__link" href="#" aria-label="Bluesky">
+                <img class="social-nav__icon" src="assets/icons/bluesky.svg" alt="" aria-hidden="true" />
+              </a>
+            </li>
+            <li>
+              <a class="social-nav__link" href="#" aria-label="Tiktok">
+                <img class="social-nav__icon" src="assets/icons/tiktok.svg" alt="" aria-hidden="true" />
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
