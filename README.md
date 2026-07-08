@@ -1,4 +1,4 @@
-# After Lapsus
+﻿# After Lapsus
 
 Landing page institucional responsiva para o estúdio indie de jogos **After Lapsus**, com foco visual em terror, RPG e sobrevivência.
 
@@ -177,6 +177,7 @@ Configurações identificadas:
 - `.nojekyll`: instrui o GitHub Pages a publicar o projeto como site estático sem processamento via Jekyll.
 - Google Fonts: a fonte Montserrat é carregada no `index.html`.
 - GitHub Pages: o projeto está preparado para publicação direta pela branch configurada no GitHub Pages.
+- Formulário de contato: configurado com `mailto:contato@afterlapsus.com.br`, abrindo o cliente de e-mail do usuário.
 
 Não foram identificados:
 
@@ -225,7 +226,7 @@ Funcionalidades identificadas no site:
   - Medo Desconhecido: Steam
   - O Show do Zozo: Steam
   - Futuros Projetos: TikTok
-- Formulário visual de contato com campos:
+- Formulário de contato via `mailto:` para `contato@afterlapsus.com.br`, com campos:
   - Nome
   - E-mail
   - Mensagem
@@ -242,7 +243,7 @@ Fluxo principal de navegação:
 4. A página apresenta o jogo em destaque, com link para vídeo no YouTube.
 5. A seção institucional apresenta informações sobre o estúdio.
 6. O usuário visualiza os cards de jogos e acessa links externos pelos botões `Saiba Mais`.
-7. O usuário encontra um formulário visual de contato.
+7. O usuário encontra um formulário de contato que abre o cliente de e-mail configurado no dispositivo.
 8. O footer reforça o logo, redes sociais e direitos reservados.
 
 ## Gerenciamento de Estado
@@ -263,7 +264,7 @@ Não foram encontrados:
 - Tratamento de erros de API.
 - Integração com backend.
 
-O formulário de contato possui `action="#"` e comentário de futura integração backend.
+O formulário de contato utiliza `mailto:contato@afterlapsus.com.br`, com método `post` e `enctype="text/plain"`. Essa abordagem abre o cliente de e-mail do usuário. Envio direto e silencioso pelo site ainda exige futura integração backend ou serviço externo de formulários.
 
 ## Persistência Local
 
@@ -356,3 +357,5 @@ Padrões de contribuição formais: A definir.
 A definir.
 
 Não foi encontrado arquivo de licença no projeto.
+
+
